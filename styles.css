@@ -1,0 +1,176 @@
+@font-face {
+      font-family: 'Oxanium-Light';
+      src: url('assets/Oxanium-Light.ttf') format('truetype');
+    }
+
+    body{
+      /*background-color: #f1f1f1;*/
+      /*background-color: #f3f8ff;*/
+      background-color: #1f1f20;
+      background-image: url('images/grain.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    body.modal-open {
+      overflow-y: hidden !important;
+    }
+
+    h3, h1 {
+      font-weight: lighter;
+      font-family: 'Oxanium-Light', sans-serif;
+    }
+
+    h3 {
+      margin-top: 60px;
+    }
+
+    .bg-dark{
+      background-color: #161618 !important;
+    }
+
+    .py-4{
+      background-color: #c9ced8;
+      padding-bottom: 250px !important;
+    }
+
+    .title {
+      margin-top: 10px;
+      font-size: 60px;
+    }
+
+    .gallery{
+      position: relative;
+      top: -215px;
+    }
+
+    footer{
+      margin-top: -215px;
+    }
+
+    .gallery .row {
+      margin-bottom: 20px;
+    }
+
+    .image {
+      cursor: pointer;
+      object-fit: cover;
+      object-position: top;
+      aspect-ratio: 1/1;
+    }
+
+    .rounded{
+      transition: .5s;
+    }
+    .rounded:hover{
+      transform: scale(1.035);
+    }
+
+    .thumb{
+      filter: brightness(30%) blur(2px);
+    }
+
+    .obj-l{
+      object-position: 35% 50%;
+    }
+
+    .obj-b{
+      object-position: 50% 70%;
+    }
+
+    #enlargedImage{
+      padding: 10px;
+    }
+
+    .description, .descriptionLink {
+      display: none;
+    }
+
+    footer .container{
+      margin-top: 30px;
+    }
+
+    #videoModal .modal-dialog {
+      max-width: 850px; /* Define a largura máxima do modal */
+      /*max-height: 5vh !important;
+      margin: 30px auto; /* Define as margens superior e inferior do modal */
+      /*max-height: calc(100vh - 60px); /* Ajuste o valor 60px de acordo com sua necessidade */
+    }
+
+    .modal-dialog img{
+      max-height: 80vh !important;
+    }
+    
+    #videoModal .modal-body {
+      position: relative;
+      padding: 0;
+    }
+
+    .modal-open .modal {
+      overflow-y: hidden !important;
+    }
+    
+    #videoModal video {
+      width: 100%;
+      height: auto;
+    }
+
+    .play-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 5rem;
+      color: #fff;
+      z-index: 1;
+      cursor: pointer;
+    }
+
+    .prev, .next{
+      position: fixed;
+      top: 45vh;
+      font-size: 3rem;
+      z-index: 2020;
+      cursor: pointer;
+    }
+    .prev{
+      left: 15%;
+    }
+    .next{
+      right: 15%;
+    }
+    
+    .modal-content {
+      width: auto;
+      max-width: calc(100vw - 30px); /* Ajuste o valor conforme necessário */
+      margin-left: auto;
+      margin-right: auto;
+    } 
+
+    @media (max-width: 767px) {
+      .gallery .row {
+        margin-bottom: 20px;
+      }
+    }
+
+    .rounded-0:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .modal-content {
+      border: none;
+    }
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .footer-line {
+      border-top: 1px solid #000;
+    }
+
+    .artstation-icon {
+      margin-right: 5px;
+    }
