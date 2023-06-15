@@ -138,5 +138,42 @@ document.addEventListener("DOMContentLoaded", function() {
       showNextImage();
     });
 
+
+
+    //touch
+    var startX, startY;
+  
+    // Captura o evento de início do toque
+    $(document).on('touchstart', function(e) {
+      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+      startX = touch.pageX;
+      startY = touch.pageY;
+    });
+    
+    // Captura o evento de fim do toque
+    $(document).on('touchend', function(e) {
+      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+      var endX = touch.pageX;
+      var endY = touch.pageY;
+      
+      // Calcula a diferença entre as coordenadas de início e fim
+      var diffX = startX - endX;
+      var diffY = startY - endY;
+      
+      // Verifica a direção do gesto
+      if (Math.abs(diffX) > Math.abs(diffY)) {
+        // Movimento horizontal
+        if (diffX > 0) {
+          // Movimento da direita para a esquerda
+          showNextImage();
+        } else {
+          // Movimento da esquerda para a direita
+          showPreviousImage();
+        }
+      } else {
+        // Movimento vertical
+        // Lógica adicional para movimento vertical (se necessário)
+      }
+    });
   });
 });

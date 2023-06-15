@@ -6,10 +6,11 @@
     body{
       /*background-color: #f1f1f1;*/
       /*background-color: #f3f8ff;*/
-      background-color: #1f1f20;
+      /*background-color: #1f1f20;*/
+      background-color: #161618;
       background-image: url('images/grain.png');
-      background-repeat: no-repeat;
-      background-size: cover;
+      /*background-repeat: no-repeat;*/
+      background-size: 150%;
       background-position: bottom;
     }
 
@@ -26,13 +27,21 @@
       margin-top: 60px;
     }
 
+    header{
+      background-image: url('images/textureHeader.png');
+      /*background-repeat: no-repeat;*/
+      background-size: 30%;
+      background-position: bottom;
+    }
+
     .bg-dark{
       background-color: #161618 !important;
     }
 
     .py-4{
       background-color: #c9ced8;
-      padding-bottom: 250px !important;
+      padding-bottom: 80px !important;
+      /*padding-bottom: 250px !important;*/
     }
 
     .title {
@@ -42,11 +51,10 @@
 
     .gallery{
       position: relative;
-      top: -215px;
     }
 
     footer{
-      margin-top: -215px;
+      /*margin-top: -215px;*/
     }
 
     .gallery .row {
@@ -92,10 +100,10 @@
     }
 
     #videoModal .modal-dialog {
-      max-width: 850px; /* Define a largura máxima do modal */
-      /*max-height: 5vh !important;
-      margin: 30px auto; /* Define as margens superior e inferior do modal */
-      /*max-height: calc(100vh - 60px); /* Ajuste o valor 60px de acordo com sua necessidade */
+      /*max-width: 850px; /* Define a largura máxima do modal */
+      /*height: 20vh !important;*/
+      /*margin: 30px auto; /* Define as margens superior e inferior do modal */
+      max-height: calc(100vh - 60px); /* Ajuste o valor 60px de acordo com sua necessidade */
     }
 
     .modal-dialog img{
@@ -133,6 +141,7 @@
       font-size: 3rem;
       z-index: 2020;
       cursor: pointer;
+      display: flex;
     }
     .prev{
       left: 15%;
@@ -143,7 +152,8 @@
     
     .modal-content {
       width: auto;
-      max-width: calc(100vw - 30px); /* Ajuste o valor conforme necessário */
+      max-width: 80vh;
+      /*max-width: calc(100vw - 30px); /* Ajuste o valor conforme necessário */
       margin-left: auto;
       margin-right: auto;
     } 
@@ -151,6 +161,10 @@
     @media (max-width: 767px) {
       .gallery .row {
         margin-bottom: 20px;
+      }
+
+      .prev, .next{
+        display: none;
       }
     }
 
@@ -171,6 +185,6 @@
       border-top: 1px solid #000;
     }
 
-    .artstation-icon {
+    .icon {
       margin-right: 5px;
     }
